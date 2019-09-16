@@ -1,0 +1,97 @@
+@import "../../styles/custom-media.css";
+@import '../../styles/custom-properties.css';
+
+.root {
+  position: relative;
+  padding: 0 0;
+  display: -webkit-inline-box;
+  -webkit-box-align: center!important;
+    -ms-flex-align: center!important;
+    align-items: center!important;
+}
+
+.label {
+  font-size: 42px;
+  line-height: var(--font-title1-line-height);
+  letter-spacing: 0.5px;
+  margin-top: 1em;
+}
+
+.label + .title {
+  margin-top: 0.2em;
+}
+
+.title {
+  padding-top: 5%;
+  font-size: 36px;
+  line-height: var(--font-title1-line-height);
+  font-weight: normal;
+}
+
+  strong {
+
+    font-size: 18px;
+    line-height: var(--font-title1-line-height);
+
+  }
+
+.image {
+  width: 45%;
+  float: right;
+  margin-right: 10em;
+  padding: 1.5em 0;
+}
+
+.content {
+  position: relative;
+  margin: 0 1.5rem;
+
+  @nest & figcaption {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  @media (--media-min-medium) {
+    margin: 0 auto;
+    padding-top: 2rem;
+
+    @nest & figcaption {
+      top: 0;
+    }
+  }
+}
+
+.caption {
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  @media (--media-min-medium) {
+    max-width: calc(var(--width-small) - 3rem);
+  }
+}
+
+.captionBox {
+  max-width: 20em;
+  margin-left: -10em;
+  
+}
+
+@media only screen and (max-width: 1000px)  {
+
+  .image {
+    width: 80%;
+    float: left;
+    margin-left: 10%;
+    margin-right: 0;
+    padding: 0;
+    margin-bottom: 3%;
+  }
+
+  .captionBox {
+    max-width: 80%;
+    margin-left: 10%;
+    text-align: center;    
+  }
+
+}

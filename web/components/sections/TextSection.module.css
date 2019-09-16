@@ -1,0 +1,41 @@
+@import '../../styles/custom-media.css';
+@import '../../styles/custom-properties.css';
+
+.root {
+  padding: 1rem 0;
+  text-align: center;
+
+}
+
+.article {
+  width: 100%;
+  max-width: 40em;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  box-sizing: border-box;
+}
+
+.label {
+  font-size: var(--font-micro-size);
+  line-height: var(--font-micro-line-height);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 1em;
+}
+
+.heading {
+  font-size: 42px;
+  line-height: var(--font-title3-line-height);
+  font-weight: normal;
+}
+
+.label+.heading {
+  margin-top: 0.25em;
+}
+
+  strong {
+
+    font-size: 32px;
+    line-height: var(--font-title1-line-height);
+
+  }
