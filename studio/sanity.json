@@ -5,7 +5,7 @@
     "dataset": "bitsandpretzels2018"
   },
   "project": {
-    "name": "Outlook vs Excel"
+    "name": "Bits and Pretzels 2019"
   },
   "plugins": [
     "@sanity/base",
